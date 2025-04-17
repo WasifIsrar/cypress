@@ -1,6 +1,6 @@
 describe('My First Test',() =>{
     it('LogsIn',()=> {
-        cy.visit('https://uatv2-dashboard.dev.aioapp.com/')
+        cy.visit('')
         cy.get('input[name="email"]').clear()
         cy.get('input[name="email"]').type('autobotuatA@gmail.com')
         cy.get('input[name="password"]').clear()
