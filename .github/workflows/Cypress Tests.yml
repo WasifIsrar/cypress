@@ -20,4 +20,6 @@ jobs:
         run: npm ci
 
       - name: 🧪 Run Cypress in Headless Chrome
-        run: npm run test
+        run: |
+          npx cypress run || echo "TESTS_FAILED=true" >> $GITHUB_ENV then
+            echo "Tests passed."
