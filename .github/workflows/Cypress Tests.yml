@@ -21,5 +21,4 @@ jobs:
 
       - name: 🧪 Run Cypress in Headless Chrome
         run: |
-          npx cypress run || echo "TESTS_FAILED=true" >> $GITHUB_ENV then
-            echo "Tests passed."
+          npx cypress run
